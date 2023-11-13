@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box .loading{
+    height: 250px;
+    width: 250px;
+    border: 20px solid yellow;
+    border-top: 20px solid gray;
+    border-radius: 50%;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes load {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    50%{
+        transform: rotate(180deg);
+        border-top: 20px solid red;
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box .loading img{
+
+    height: 200;
+    width: 200px;
+    border-radius: 50%;
+}
